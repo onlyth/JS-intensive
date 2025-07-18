@@ -3,11 +3,13 @@
 // This helps understand floating-point precision issues
 
 function isAlmostEqual(a, b, epsilon) {
+    return Math.abs(a-b)<epsilon;
     // TODO: Compare if the absolute difference between a and b is less than epsilon
     // Hint: Use Math.abs() to get absolute difference
     
 }
-
+console.log(isAlmostEqual(0.1 + 0.2, 0.3, 0.0001))
+console.log(isAlmostEqual(1.0, 1.1, 0.05))
 // Test cases:
 // isAlmostEqual(0.1 + 0.2, 0.3, 0.0001) should return true
 // isAlmostEqual(1.0, 1.1, 0.05) should return false 
