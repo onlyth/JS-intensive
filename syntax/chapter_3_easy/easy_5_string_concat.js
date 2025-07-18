@@ -2,12 +2,13 @@
 // Task: Create a greeting with a name
 
 function createGreeting(firstName, lastName) {
+    return "Hello, " + firstName.replace(/$/, ' ') + lastName.replace(/$/, '!')
     // TODO: Return string "Hello, [firstName] [lastName]!"
     // Use + operator to concatenate strings
     
 }
 
 // Test cases:
-// createGreeting("John", "Smith") should return "Hello, John Smith!"
-// createGreeting("Mary", "Johnson") should return "Hello, Mary Johnson!"
-// createGreeting("Alex", "Brown") should return "Hello, Alex Brown!" 
+console.log(createGreeting("John", "Smith")) // should return "Hello, John Smith!"
+console.log(createGreeting("Mary", "Johnson")) //should return "Hello, Mary Johnson!"
+console.log(createGreeting("Alex", "Brown")) //should return "Hello, Alex Brown!" 

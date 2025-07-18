@@ -2,6 +2,7 @@
 // Task: Check if a number is even
 
 function isEven(number) {
+    return number%2==0
     // TODO: Return true if number is even, false if odd
     // Hint: use % operator (remainder when dividing by 2)
     // Even number: remainder when divided by 2 equals 0
@@ -9,7 +10,7 @@ function isEven(number) {
 }
 
 // Test cases:
-// isEven(4) should return true
-// isEven(7) should return false
-// isEven(0) should return true
-// isEven(13) should return false 
+ console.log(isEven(4)) //should return true
+ console.log(isEven(7)) //should return false
+ console.log(isEven(0)) //should return true
+ console.log(isEven(13))// should return false 
