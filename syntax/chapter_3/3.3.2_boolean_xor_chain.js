@@ -3,10 +3,22 @@
 
 function xorChain(...args) {
     
-    let arr_mod = args.filter(val=> val).length
+    var arr_mod = [...args]
+    let count = 0;
+   
     
-    return `${arr_mod % 2 === 1} (${arr_mod} truthy values)`
+    for (let i=0; i<arr_mod.length; i++) {
+        if (arr_mod[i]){
+            count++
+     }
+    }
+    return `${count % 2 ===1} (${count} truthy values) `
+
+    /*let arr_mod = args.filter(val=> val).length
+    return `${arr_mod % 2 === 1} (${arr_mod} truthy values)`*/
+    
     // concatenation variant: return (arr_mod % 2 === 1 ? true : false ) + " (" + arr_mod + " truthy values)"
+    
     // TODO: Count truthy values and return true if count is odd
     // Hint: Use filter() to count truthy values
     // Then check if count % 2 === 1
